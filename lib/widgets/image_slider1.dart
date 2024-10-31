@@ -68,7 +68,7 @@ class _ImageSliderState extends State<ImageSlider1> {
       children: [
         SizedBox(
           width: double.infinity,
-          height: 300, // Customizable height for the slider
+          height: 225, // Customizable height for the slider
           child: PageView.builder(
             controller: _pageController,
             itemCount: imgList.length,
@@ -85,7 +85,7 @@ class _ImageSliderState extends State<ImageSlider1> {
                     imgList[index]['image']!,
                     fit: BoxFit.contain,
                     width: double.infinity,
-                    height: 280, // Set height for images
+                    height: 225, // Set height for images
                   ),
 
 

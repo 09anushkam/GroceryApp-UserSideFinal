@@ -94,7 +94,7 @@ class _MyOtpState extends State<MyOtp> {  // Renamed from _MyVerifyState to _MyO
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'home_screen1');
+                    Navigator.pushNamed(context, 'LocationScreen');
                     // Handle the OTP verification
                   },
                   child: const Text(

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-
 import 'screens/home_screen1.dart';
 import 'screens/phone.dart';
 import 'screens/otp.dart';
+import 'screens/LocationScreen.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -11,6 +11,7 @@ void main() {
     routes: {
       'phone': (context) => MyPhone(),
       'otp': (context) => MyOtp(),
+      'LocationScreen': (context) => LocationScreen(),
 
 
     },

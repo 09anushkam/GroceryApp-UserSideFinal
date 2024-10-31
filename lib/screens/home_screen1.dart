@@ -19,7 +19,7 @@ class home_screen1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(75.0),
+        preferredSize: Size.fromHeight(55),
         child: AppBar(
           backgroundColor: Colors.green,
           elevation: 6,
@@ -37,7 +37,7 @@ class home_screen1 extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.only(
                     top: 20.0, // Adjusted top padding
-                    bottom: 0, // Bottom padding
+                    bottom: 2, // Bottom padding
                     left: 0, // Left padding
                     right: 0, // Right padding
                   ),
@@ -45,7 +45,7 @@ class home_screen1 extends StatelessWidget {
                     'ShopLocalia',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 35,
+                      fontSize: 22,
                       color: Colors.white,
                     ),
                   ),
@@ -54,15 +54,15 @@ class home_screen1 extends StatelessWidget {
                 Container(
                   padding: EdgeInsets.only(
                     top: 20, // Adjusted top padding
-                    bottom: 0, // Desired bottom padding
-                    left: 0, // Desired left padding
+                    bottom: 5, // Desired bottom padding
+                    left: 50, // Desired left padding
                     right: 0, // Desired right padding
                   ),
                   child: ClipOval(
                     child: Image.asset(
                       'Assests/logo1.png', // Ensure the asset path is correct
-                      width: 100,
-                      height: 100,
+                      width: 70,
+                      height: 70,
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -72,27 +72,24 @@ class home_screen1 extends StatelessWidget {
           ),
         ),
       ),
+
       body: Column(
         children: [
           // First child is an image
-          Container(
-            width: double.infinity, // Makes the image take the full width
-            height: 300, // Set the height of the image as needed
-            child: ImageSlider1(),
-          ),
+          ImageSlider1(),
           SizedBox(height: 10),
           // Other children can be added below
           Text(
             "Where Local Meets Convenience",
             style: TextStyle(
-              fontSize: 25,
+              fontSize: 18,
               fontWeight: FontWeight.w500,
               color: Colors.black,
             ),
             textAlign: TextAlign.center,
           ),
 
-          SizedBox(height: 15), // Spacer between text and skip login button
+          SizedBox(height: 25), // Spacer between text and skip login button
 
           // Login button
           Center(
@@ -117,17 +114,17 @@ class home_screen1 extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height:50),
+          SizedBox(height:40),
           Image.asset(
             'Assests/mid.png', // Ensure the path is correct
             width: double.infinity,
-            height: 260,
+            height: 180,
             fit: BoxFit.cover,
           ),
-          SizedBox(height:0),
 
 
-          SizedBox(height: 15), // Spacer between text and skip login button
+
+          SizedBox(height: 53.5), // Spacer between text and skip login button
           Padding(
             padding: EdgeInsets.only(
               top: 0,      // Replace with desired top padding
@@ -138,7 +135,7 @@ class home_screen1 extends StatelessWidget {
             child: Image.asset(
               'Assests/bottom.png', // Make sure the path is correct
               width: double.infinity,
-              height: 105,
+              height: 60,
               fit: BoxFit.cover,
             ),
           )
